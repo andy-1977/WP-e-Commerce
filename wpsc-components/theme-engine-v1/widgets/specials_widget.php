@@ -170,7 +170,7 @@ function _wpsc_filter_special_widget_join( $join ) {
  * 5. Function now expect a single paramter with an array of options (used to be a string which prepended the output).
  */
 
-function wpsc_specials( $args = null, $instance ) {
+function wpsc_specials( $args , $instance ) {
 
 	global $wpdb;
 

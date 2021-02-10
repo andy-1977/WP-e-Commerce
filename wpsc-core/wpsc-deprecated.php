@@ -89,7 +89,7 @@ function nzshpcrt_donations($args){
  * 4. The product list is enclosed in a <div> with a 'wpec-latest-products' class.
  * 5. Function now expects two arrays as per the standard Widget API.
  */
-function nzshpcrt_latest_product( $args = null, $instance ) {
+function nzshpcrt_latest_product( $args, $instance ) {
 	_wpsc_deprecated_function( __FUNCTION__, '3.8', 'wpsc_latest_product');
 	echo wpsc_latest_product( $args, $instance );
 }
