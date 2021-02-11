@@ -21,7 +21,7 @@ function wpsc_sanitize_meta_key( $key ) {
  * @param   string   $object_type  Object type.
  * @return  mixed                  Meta value.
  */
-function wpsc_get_meta( $object_id , $meta_key, $object_type ) {
+function wpsc_get_meta( $object_id, $meta_key, $object_type ) {
 
 	global $wpdb;
 
