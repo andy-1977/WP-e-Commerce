@@ -115,7 +115,7 @@ add_action( 'widgets_init', function() {
 	return register_widget( 'WP_Widget_Latest_Products' );
 } );
 
-function wpsc_latest_product( $args, $instance ) {
+function wpsc_latest_product( $args = null, $instance ) {
 	global $wpdb;
 	$args = wp_parse_args( (array)$args, array( 'number' => 5 ) );
 	$options = get_option( 'wpsc-widget_latest_products' );
