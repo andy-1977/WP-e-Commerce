@@ -158,7 +158,7 @@ function wpsc_list_categories($callback_function, $parameters = null, $category_
 * Gets the Function Parent Image link and checks whether Image should be displayed or not
 *
 */
-function wpsc_parent_category_image($show_thumbnails , $category_image , $width, $height, $grid=false, $show_name){
+function wpsc_parent_category_image($show_thumbnails , $category_image , $width, $height, $show_name, $grid=false ){
 
 	if(!$show_thumbnails) return;
 
