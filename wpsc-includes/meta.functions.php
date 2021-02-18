@@ -21,7 +21,11 @@ function wpsc_sanitize_meta_key( $key ) {
  * @param   string   $object_type  Object type.
  * @return  mixed                  Meta value.
  */
+<<<<<<< HEAD
 function wpsc_get_meta( $object_id, $meta_key, $object_type ) {
+=======
+function wpsc_get_meta( $object_id = 0, $meta_key, $object_type ) {
+>>>>>>> parent of eb244fad (PHP 8 Compatibility)
 
 	global $wpdb;
 
@@ -60,7 +64,7 @@ function wpsc_get_meta( $object_id, $meta_key, $object_type ) {
  * @param   boolean  $global       ?
  * @return  boolean
  */
-function wpsc_update_meta( $object_id, $meta_key, $meta_value, $object_type, $global = false ) {
+function wpsc_update_meta( $object_id = 0, $meta_key, $meta_value, $object_type, $global = false ) {
 
 	global $wpdb;
 
@@ -105,7 +109,7 @@ function wpsc_update_meta( $object_id, $meta_key, $meta_value, $object_type, $gl
  * @param   boolean  $global       ?
  * @return  boolean
  */
-function wpsc_delete_meta( $object_id, $meta_key, $meta_value, $object_type, $global = false ) {
+function wpsc_delete_meta( $object_id = 0, $meta_key, $meta_value, $object_type, $global = false ) {
 
 	global $wpdb;
 
